@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Berke Kaan Asikoglu</title>
+		<title>Resume</title>
 		<meta charset="utf-8">
-		<link rel="icon" href="picture.ico" type="image/x-icon" />
 		<style>
 		body {
 			color: #666666;
@@ -91,12 +90,12 @@
 	</head>
 	<body>
 		<div class="header" id="myHeader">
-			<img src="picture.jpg" style="float:right;width:255px;height:255px;">
 			<h1>Berke Kaan Aşıkoğlu</h1>
 			<h2> Software engineer</h2>
 			<nav>
 				<ul>
 					<li><a href="index.html">Home</a></li>
+					<li><a href="resume.html">Resume</a></li>
 					<li><a href="hw5.pdf" target="blank">HW5</a></li>
 					<li><a href="hw6.pdf" target="blank">HW6</a></li>
 				</ul>
@@ -125,5 +124,18 @@
 		<footer>
 			Berke Kaan Aşıkoğlu &copy; 2021
 		</footer>
+		<script>
+			window.onscroll = function() {myFunction()};
+			var header = document.getElementById("myHeader");
+			var sticky = header.offsetTop;
+			function myFunction() {
+				if (window.pageYOffset > sticky) {
+				header.classList.add("sticky");
+				}
+				else {
+				header.classList.remove("sticky");
+				}
+			}
+		</script>
 	</body>
 </html>
